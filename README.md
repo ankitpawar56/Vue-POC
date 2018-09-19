@@ -1,5 +1,6 @@
 # VuePOC
-
+### Live Demo
+https://vuepoc.herokuapp.com/
 ## Project setup
 ```
 npm install
