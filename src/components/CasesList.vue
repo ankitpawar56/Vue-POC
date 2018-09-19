@@ -57,7 +57,7 @@ export default {
     },
     //Paginate
     next() {
-        if(this.page <= this.products.length) //limit increemnt
+        if(this.page <= this.filtered.length) //limit increemnt
         {
             this.page = this.page+4,
             this.start = this.start+4
@@ -87,7 +87,7 @@ export default {
             if (this.range === 'below')
                 return priced.Price < 4000
             if (this.range === 'equal')
-                return priced.Price > 5000 && priced.Price < 4000
+                return priced.Price < 5000 && priced.Price > 4000
             if(this.range === 'above')
                 return priced.Price > 5000             
             })
@@ -168,8 +168,14 @@ export default {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-  } 
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    box-shadow: rgba(0,0,0,0.19) 0px 2px 63px -4px;
+  }
+  
+  .cases:hover {
+       box-shadow:rgba(0,0,0,0.19) 0px 2px 23px -4px;
+        transition: 500ms;
+  }
 .pad {
     margin: 10px;
 }

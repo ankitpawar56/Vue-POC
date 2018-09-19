@@ -1,5 +1,6 @@
 <template>
 <div class="container">
+        <!-- Cart display -->
     <div v-for="(cart,index) in getCart" :key="index">
     <table class="table">
         <thead>

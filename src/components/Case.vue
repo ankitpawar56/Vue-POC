@@ -64,8 +64,13 @@ export default {
     flex-direction: column;
     align-items: center;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+   box-shadow: rgba(0,0,0,0.19) 0px 2px 63px -4px;
   } 
+
+.cases:hover {
+    box-shadow:rgba(0,0,0,0.19) 0px 2px 23px -4px;
+        transition: 500ms;
+}
 
   .pad {
     margin: 10px;

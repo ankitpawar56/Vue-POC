@@ -2,13 +2,13 @@
     <header id="header">
         <nav>
             <ul>
-                <li v-if="auth">
+                <li v-if="auth" >
                     <router-link to="/Cart">
-                        <button class="btn btn-success">Cart</button> 
+                        <button class="btn btn-success" style="float:right">Cart</button> 
                     </router-link>
                 </li>
                 <li v-if="auth">
-                <button @click ="onLogout" class="btn btn-danger">Logout</button>
+                <button @click ="onLogout" class="btn btn-danger" style="float:right">Logout</button>
                 </li>
             </ul>
         </nav>
@@ -33,9 +33,6 @@ export default {
 <style scoped>
  #header {
     height: 56px;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
     background-color:whitesmoke;
     padding: 0 20px;
   }
@@ -46,18 +43,17 @@ export default {
 
    ul {
     list-style: none;
-    margin: 0% 0% 0% 120%;
     padding: 0;
+    margin: 0% 0% 0% 70%;
     height: 100%;
     display: flex;
-    flex-flow: row;
     align-items: center;
+    right: 0;
     
   }
 li {
-    margin: 0 16px;
-     align-items: center;
-    
+    display: block;
+    margin: 0px 16px 0px 6px;  
   }
 
  

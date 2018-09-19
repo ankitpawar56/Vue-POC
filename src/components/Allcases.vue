@@ -3,6 +3,7 @@
 <!-- Display All cases -->
         <app-header></app-header>
   <div class="container">
+    <!-- Search By Sort By -->
   <div class="col-xs-4 text-center">
     <label for="Search">Search</label><br><br>
       <input 
